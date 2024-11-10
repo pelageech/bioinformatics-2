@@ -1,0 +1,22 @@
+artblaginin@artblaginin-test-vm-ru-central1-a1:~/bio/files$ ./nextflow run ./main1.nf -with-dag flowchart.png
+
+ N E X T F L O W   ~  version 24.10.0
+
+Launching `./main1.nf` [pensive_murdock] DSL2 - revision: bda5c1deb3
+
+Starting pipeline...
+executor >  local (7)
+[82/c194b5] getFastq         | 1 of 1 ✔
+[62/c501c7] getReference     | 1 of 1 ✔
+[57/391189] minimapProcess   | 1 of 1 ✔
+[50/8dc8c8] samtoolsView     | 1 of 1 ✔
+[14/9e5e3e] samtoolsFlagstat | 1 of 1 ✔
+[50/cf8b70] parsePercent     | 1 of 1 ✔
+[e2/915cba] checkPercent     | 1 of 1 ✔
+66.04
+Not OK
+WARN: Graphviz is required to render the execution DAG in the given format -- See http://www.graphviz.org for more info.
+Completed at: 10-Nov-2024 14:22:11
+Duration    : 5m 53s
+CPU hours   : 0.1
+Succeeded   : 7
