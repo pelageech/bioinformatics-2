@@ -83,5 +83,7 @@ nextflow run ./main.nf -with-dag flowchart.png
 ```
 
 Визуализация
-![flowchart](https://github.com/user-attachments/assets/9c7c1f35-59eb-4342-a8f0-173c44b405f6)
+![flowchart](https://github.com/user-attachments/assets/3a249370-b2c6-4134-bd29-8a7b14534f06)
 
+
+Визуализация немного отличаяется тем, что вся логика в handleResut
