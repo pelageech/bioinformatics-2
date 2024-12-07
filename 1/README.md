@@ -83,7 +83,7 @@ nextflow run ./main.nf -with-dag flowchart.png
 ```
 
 Визуализация
-![flowchart](https://github.com/user-attachments/assets/3a249370-b2c6-4134-bd29-8a7b14534f06)
+![flowchart](https://github.com/user-attachments/assets/c62304e0-5a37-4799-a630-f55dcb3520c5)
 
 
-Визуализация немного отличаяется тем, что вся логика в handleResut
+Визуализация немного отличаяется тем, что вся логика в handleResult сокрыта в subscribe, которые подписаны на ОК и not OK.
