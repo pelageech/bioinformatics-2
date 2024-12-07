@@ -1,0 +1,26 @@
+install RoseTTAFold2
+install hhsuite
+/usr/local/lib/python3.10/dist-packages/e3nn/o3/_wigner.py:10: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  _Jd, _W3j_flat, _W3j_indices = torch.load(os.path.join(os.path.dirname(__file__), 'constants.pt'))
+/content/RoseTTAFold2/network/SE3_network.py:78: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  @torch.cuda.amp.autocast(enabled=False)
+compile RoseTTAFold2
+/content/RoseTTAFold2/network/predict.py:234: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(model_weights, map_location=self.device)
+CPU times: user 17.4 s, sys: 1.76 s, total: 19.2 s
+Wall time: 2min 9s
+jobname: test_X1_6e0f8
+lengths: [100]
+getting unpaired MSA
+COMPLETE: 100%|██████████| 150/150 [elapsed: 00:01 remaining: 00:00]
+N=2048 L=100
+/content/RoseTTAFold2/network/predict.py:509: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(True):
+recycle 0 plddt 0.828 pae 4.520 rmsd 15.677
+recycle 1 plddt 0.848 pae 4.262 rmsd 0.592
+recycle 2 plddt 0.859 pae 4.035 rmsd 0.214
+recycle 3 plddt 0.860 pae 4.066 rmsd 0.215
+recycle 4 plddt 0.866 pae 3.924 rmsd 0.166
+recycle 5 plddt 0.865 pae 3.996 rmsd 0.135
+recycle 6 plddt 0.863 pae 4.074 rmsd 0.100
+runtime=18.06 vram=0.67
